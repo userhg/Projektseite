@@ -35,4 +35,4 @@ Stein zerstört Schere
 ### Der Spielanfang<a name="4"></a>
 Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen. 
 
-[https://github.com/userhg/Stundenblog/blob/master/images/Play%20stage.png]!
+![image1](https://github.com/userhg/Stundenblog/blob/master/images/Play%20stage.png)
