@@ -35,5 +35,15 @@ Stein zerstört Schere
 ### Der Spielanfang<a name="4"></a>
 Der Startbildschirm unseres Spiels zeigt zwei Fäuste, dargestellt aus zwei Sprites. Die rechte Hand ist die Computer Faust (Sprite: Fist C) und hat in dem Spiel keine besondere Funktion. Sie zeigt sich zu Anfang und verschwindet durch den "Broadcast: Hide" bei der Spielauswertung. Die linke Hand stellt die Faust des Spielers dar (Sprite: Fist P) und koordiniert den Spielanfang.
 Im Hintergrund ist die "Play Stage" angezeigt.
+
 ![image1](https://github.com/userhg/Stundenblog/blob/master/images/Play%20stage.png)
-Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen. 
+
+Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen.
+Dazu haben wir zwei Variablen eingeführt: *userchoice* und *Spacekeypressed*
+Beide Variablen werden zu Anfang auf 0 gesetzt.
+In der ersten Sprechblase wird dazu aufgefordert zuerst die Leertaste zu drücken, um das Spiel zu starten.
+Sobald dies erfolgt, wird die Variable *Spacekeypressed* auf 1 gesetzt und die Sprechblase verschwindet.
+Gleichzeitig wird eine Nachricht (broadcast) *spacepressed* gesendet, worauf die drei verschiedene Sprites mit den Symbolen Schere, Stein und Papier erscheinen. Nun wird der Spieler dazu aufgefordert, sich durch einen Klick für eines der drei Auswahlmöglichkeiten zu entscheiden. Wenn eines dieser drei Sprites angeklickt wird, wird die Variable *userchoice* auf 1 (Rock), 2 (Scissors) oder 3 (Paper) gesetzt. 
+
+
+![image 2](https://github.com/userhg/Stundenblog/blob/master/images/Spielanfang%20endv..png)
