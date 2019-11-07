@@ -33,6 +33,7 @@ Papier umwickelt Stein
 Stein zerstört Schere
 
 ### Der Spielanfang<a name="4"></a>
-Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen. 
-
+Der Startbildschirm unseres Spiels zeigt zwei Fäuste, dargestellt aus zwei Sprites. Die rechte Hand ist die Computer Faust (Sprite: Fist C) und hat in dem Spiel keine besondere Funktion. Sie zeigt sich zu Anfang und verschwindet durch den "Broadcast: Hide" bei der Spielauswertung. Die linke Hand stellt die Faust des Spielers dar (Sprite: Fist P) und koordiniert den Spielanfang.
+Im Hintergrund ist die "Play Stage" angezeigt.
 ![image1](https://github.com/userhg/Stundenblog/blob/master/images/Play%20stage.png)
+Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen. 
