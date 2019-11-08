@@ -75,7 +75,7 @@ Nun wird mit dem If-Befehl nur bei dem Fall das die Variable *false* ist die Var
 
 ### Wahl des Computers <a name="6"></a>
 
-Die Wahl des Computers spielt sich in einem Sprite (Choice C) ab, in das wir die drei Symbole Schere, Stein und Papier als Kostüme eingeführt haben. Der im Bild unten gezeigte Block starten, wenn die Nachricht *start random pick* von vorher angeklickten Sprite des Spielers gesendet wurde (siehe [Wahl des Spielers](#6)).
+Die Wahl des Computers spielt sich in einem Sprite (Choice C) ab, in das wir die drei Symbole Schere, Stein und Papier als Kostüme eingeführt haben. Der im Bild unten gezeigte Block starten, wenn die Nachricht *start random pick* von vorher angeklickten Sprite des Spielers gesendet wurde (siehe [Wahl des Spielers](#5)).
 Nun wird die neue Variable *fistchoice* in das Script integriert.
 
 ![image 5](https://github.com/userhg/Stundenblog/blob/master/images/Script%20computer.png)
