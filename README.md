@@ -70,4 +70,4 @@ Zu Anfang des Spiels sind die drei Sprites mit den drei verschiedenen Symbolen i
 Durch die Nachricht *spacepressed* treten sie zum ersten Mal in Erscheinung. Nun kann ein Symbol durch Anklicken von dem Spieler ausgewählt werden. Damit der Gegenstand nur einmalig angeklickt werden kann haben wir einen Statusindikator (Flag) programmiert. Dazu haben wir die lokale Variable *WarSchonGeklickt* für alle drei Sprites eingeführt. Zu Anfang wird diese Variable auf *false* gesetzt. 
 Nun wird mit dem If-Befehl nur bei dem Fall das die Variable *false* ist die Variable auf *true* gesetzt, sodass der Befehl nicht ein zweites Mal ablaufen kann. Außerdem wird eine Nachricht geschickt mit *paper clicked* ,*scissor sclicked* oder *rock clicked*, sodass die jeweiligen nicht ausgewählten Sprites wieder in den versteckten Zustand wechseln. Das angeglickte Sprite gleitet auf das Symbol der Faust des Spielers und macht sich für das Spiel bereit. Gleichzeitig wird das eigentliche Spiel mit der Nachricht *start pick random* gestartet.  
 
-![image 3](https://github.com/userhg/Stundenblog/blob/master/images/Paper%20sprite.png)
+![image 3]()
