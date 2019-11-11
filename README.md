@@ -32,7 +32,7 @@ Vor unserer ersten Informatikstunde hatten wir beide keinerlei Vorstellungen ode
 
 ### Das Programm<a name="2"></a>
 Das Programm, welches wir für das Erstellen unseres Projekts verwendet haben, ist die Plattform Snap! (https://snap.berkeley.edu/)
-Diese wirbt mit anfängerfreundlichen Designs und hilfreichen Tipps, die uns jeoch nicht viel geholfen haben. Das Konzept von Snap! basiert aucf einer visuellen Programmiersprache, sodass Scipts durch vorgefertigte Blocks nachvollziehbar sind. 
+Diese wirbt mit anfängerfreundlichen Designs und hilfreichen Tipps, die uns jedoch nicht viel geholfen haben. Das Konzept von Snap! basiert auf einer visuellen Programmiersprache, sodass Scipts durch vorgefertigte Blocks nachvollziehbar sind. 
 
 ### Die Spielidee<a name="3"></a>
 Das Spiel, welches wir programmiert haben, ist eine Computerversion des bekannten Spiels "Schere, Stein, Papier". Dieses Spiel benötigt in der Praxis normalerweise zwei Spieler, die gegeneinander spielen. Durch unsere Computerversion ermöglichen wir auch Einzelpersonen, die keinen Spielpartner gefunden haben, den Spaß zu erleben. 
@@ -73,9 +73,21 @@ Nun wird mit dem If-Befehl nur bei dem Fall das die Variable *false* ist die Var
 ![image 3](https://github.com/userhg/Stundenblog/blob/master/images/Script%20Paper.png) 
 
 
-### Wahl des Computers <a name="6"></a>
+### Wahl des Computers<a name="6"></a>
 
-Die Wahl des Computers spielt sich in einem Sprite (Choice C) ab, in das wir die drei Symbole Schere, Stein und Papier als Kostüme eingeführt haben. Der im Bild unten gezeigte Block starten, wenn die Nachricht *start random pick* von vorher angeklickten Sprite des Spielers gesendet wurde (siehe [Wahl des Spielers](#5)).
-Nun wird die neue Variable *fistchoice* in das Script integriert.
+Die Wahl des Computers spielt sich in einem Sprite (Choice C) ab, in das wir die drei Symbole Schere, Stein und Papier als Kostüme eingeführt haben. Der im Bild unten gezeigte Block startet, wenn die Nachricht *start random pick* von vorher angeklickten Sprite des Spielers gesendet wurde (siehe [Wahl des Spielers](#5)).
+Nun wird die neue Variable *fistchoice* in das Script integriert. Der Computer wählt nun zufällig zwischen 1 und 3 eine Zahl aus. Mit dem if-Befehl erscheint er bei 1 im Vordergrund im Kostüm des Steins, bei 2 im Kostüm der Schere und bei 3 im Kostüm des Papiers. Wenn dies erfolgt ist, wird die Nachricht "Chosen" verschickt. 
 
 ![image 5](https://github.com/userhg/Stundenblog/blob/master/images/Script%20computer.png)
+
+### Auswertung des Spiels<a name="7"></a>
+
+Für die Auswertung des Spiels haben wir einen neuen Sprite "Win or Lose" eingeführt, der jedoch während des gesamten Spiels nicht zu sehen ist. Dieser empfängt, wenn die Wahl des Coputers abgeschlossen ist, die Nachricht "Chosen" (siehe [Wahl des Computers](#6))
+Nun haben wir den if-Befehl eingesetzt. Wenn die Variable 
+*fistchoice* = 1 und *userchoice* = 3 (Spieler gewinnt mit Papier gegen Computer mit Stein) oder 
+*fistchoice* = 2 und *userchoice* = 1 (Spieler gewinnt mit Stein gegen Computer mit Schere) oder
+*fistchoice* = 3 und *userchoice* = 2 (Spieler gewinnt mit Schere gegen Computer mit Papier)
+lautet, wird die Nachricht "Win" gesendet. Diese erhält unsere "Play Stage", der Hintergrund, der während des Spiels zu sehen ist (siehe [Der Spielanfang](#4)). 
+Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut haben, wird die Nachricht "Hide" an alle Sprites geschickt, die daraufhin verschwinden. Gleichzeitig ändert sich der Hintergrund zur "Win Stage" PIC 
+Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fodert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
+Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Scherr oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". De Rest vom Ende des Spiels läuft von da na genau so ab wie im Fall "Win". 
