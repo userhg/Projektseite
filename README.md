@@ -92,6 +92,7 @@ Nun haben wir den if-Befehl eingesetzt. Wenn die Variable
 *fistchoice* = 3 und *userchoice* = 2 (Spieler gewinnt mit Schere gegen Computer mit Papier)
  lautet, wird die Nachricht "Win" gesendet. Diese erhält unsere "Play Stage", der Hintergrund, der während des Spiels zu sehen ist (siehe [Der Spielanfang](#4)). 
 Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut haben, wird die Nachricht "Hide" an alle Sprites geschickt, die daraufhin verschwinden. Gleichzeitig ändert sich der Hintergrund zur "Win Stage" PIC 
+
 Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fordert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
 
 Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Scherr oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
