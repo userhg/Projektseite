@@ -96,7 +96,7 @@ Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut
 
 Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fordert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
 
-Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Scherr oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
+Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Schere oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
 
 Wenn die Variabeln 
 
@@ -106,7 +106,7 @@ Wenn die Variabeln
 
 *fistchoice* = 3 und *userchoice* = 1 (Spieler veliert mit Stein gegen Computer mit Papier)
 
-lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen auch,verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
+lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen,verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
 
 
 ### Spielreflexion<a name="8"></a>
