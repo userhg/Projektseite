@@ -83,19 +83,30 @@ Nun wird die neue Variable *fistchoice* in das Script integriert. Der Computer w
 ### Auswertung des Spiels<a name="7"></a>
 
 Für die Auswertung des Spiels haben wir einen neuen Sprite "Win or Lose" eingeführt, der jedoch während des gesamten Spiels nicht zu sehen ist. Dieser empfängt, wenn die Wahl des Coputers abgeschlossen ist, die Nachricht "Chosen" (siehe [Wahl des Computers](#6))
-Nun haben wir den if-Befehl eingesetzt. Wenn die Variable 
+Nun haben wir den if-Befehl eingesetzt. Wenn die Variablen 
 
 *fistchoice* = 1 und *userchoice* = 3 (Spieler gewinnt mit Papier gegen Computer mit Stein) oder 
 
 *fistchoice* = 2 und *userchoice* = 1 (Spieler gewinnt mit Stein gegen Computer mit Schere) oder
 
 *fistchoice* = 3 und *userchoice* = 2 (Spieler gewinnt mit Schere gegen Computer mit Papier)
- lautet, wird die Nachricht "Win" gesendet. Diese erhält unsere "Play Stage", der Hintergrund, der während des Spiels zu sehen ist (siehe [Der Spielanfang](#4)). 
+
+lauten, wird die Nachricht "Win" gesendet. Diese erhält unsere "Play Stage", der Hintergrund, der während des Spiels zu sehen ist (siehe [Der Spielanfang](#4)). 
 Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut haben, wird die Nachricht "Hide" an alle Sprites geschickt, die daraufhin verschwinden. Gleichzeitig ändert sich der Hintergrund zur "Win Stage" PIC 
 
 Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fordert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
 
 Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Scherr oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
+
+Wenn die Variabeln 
+
+*fistchoice* = 1 und *userchoice* = 2 (Spieler vierliert mit Schere gegen Computer mit Stein) oder 
+
+*fistchoice* = 2 und *userchoice* = 3 (Spieler verliert mit Papier gegen Computer mit Schere) oder
+
+*fistchoice* = 3 und *userchoice* = 1 (Spieler veliert mit Stein gegen Computer mit Papier)
+
+lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen auch,verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
 
 
 ### Spielreflexion<a name="8"></a>
