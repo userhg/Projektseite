@@ -102,4 +102,4 @@ Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben be
 
 Nach zweieinhalb Monaten, in denen wir sowohl Erfolgserlebnisse, als auch so manchen Tiefpunkt erlitten haben, sind wir mit dem Ergebnis unseres ersten Projekts zufrieden.
 Unser Spiel wäre alledings auch noch ausbaufähig gewesen. Man hättte das Ganze auf mehrere Runden erweitern können, bis der Spieler oder der Computer beispielsweise mit drei Punkten gewinnt. Jedoch fehlte uns dazu die Zeit, da wir viel Zeit benötigten, unere eigenen Ideen und Ansaätze erfolgreich umzusetzen. Daher haben wir entschieden, dass das Spiel nach einer Runde zu Ende ist. So konnten wir uns auf die wesentlichen Vorgänge des Spiels besser konzentrieren.
-Wir sind sehr stolz darauf "Rock, Paper Scissors" #ohne jegliche Hilfsmittel aus dem Internet oder Vorwissen 
+Wir sind sehr stolz darauf "Rock, Paper Scissors" ohne jegliche Hilfsmittel aus dem Internet oder Vorwissen programmiert zu haben. Uns gefällt auch d
