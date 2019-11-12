@@ -96,3 +96,10 @@ Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut
 Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fordert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
 
 Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Scherr oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
+
+
+### Spielreflexion<a name="8"></a>
+
+Nach zweieinhalb Monaten, in denen wir sowohl Erfolgserlebnisse, als auch so manchen Tiefpunkt erlitten haben, sind wir mit dem Ergebnis unseres ersten Projekts zufrieden.
+Unser Spiel wäre alledings auch noch ausbaufähig gewesen. Man hättte das Ganze auf mehrere Runden erweitern können, bis der Spieler oder der Computer beispielsweise mit drei Punkten gewinnt. Jedoch fehlte uns dazu die Zeit, da wir viel Zeit benötigten, unere eigenen Ideen und Ansaätze erfolgreich umzusetzen. Daher haben wir entschieden, dass das Spiel nach einer Runde zu Ende ist. So konnten wir uns auf die wesentlichen Vorgänge des Spiels besser konzentrieren.
+Wir sind sehr stolz darauf "Rock, Paper Scissors" #ohne jegliche Hilfsmittel aus dem Internet oder Vorwissen 
