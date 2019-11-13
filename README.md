@@ -83,7 +83,12 @@ Nun wird die neue Variable *fistchoice* in das Script integriert. Der Computer w
 ### Auswertung des Spiels<a name="7"></a>
 
 Für die Auswertung des Spiels haben wir einen neuen Sprite "Win or Lose" eingeführt, der jedoch während des gesamten Spiels nicht zu sehen ist. Dieser empfängt, wenn die Wahl des Coputers abgeschlossen ist, die Nachricht "Chosen" (siehe [Wahl des Computers](#6))
-Nun haben wir den if-Befehl eingesetzt. Wenn die Variablen 
+Nun haben wir den if-Befehl eingesetzt. 
+
+![image9](https://github.com/userhg/Stundenblog/blob/master/images/WIN%2Cl%2Cta.png)
+
+
+Wenn die Variablen 
 
 *fistchoice* = 1 und *userchoice* = 3 (Spieler gewinnt mit Papier gegen Computer mit Stein) oder 
 
@@ -92,11 +97,15 @@ Nun haben wir den if-Befehl eingesetzt. Wenn die Variablen
 *fistchoice* = 3 und *userchoice* = 2 (Spieler gewinnt mit Schere gegen Computer mit Papier)
 
 lauten, wird die Nachricht "Win" gesendet. Diese erhält unsere "Play Stage", der Hintergrund, der während des Spiels zu sehen ist (siehe [Der Spielanfang](#4)). 
-Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut haben, wird die Nachricht "Hide" an alle Sprites geschickt, die daraufhin verschwinden. Gleichzeitig ändert sich der Hintergrund zur "Win Stage" PIC 
+Nach zwei Sekunden, die wir zur Vermeidung eines zu schnellen Wechsels eingebaut haben, wird die Nachricht "Hide" an alle Sprites geschickt, die daraufhin verschwinden. Gleichzeitig ändert sich der Hintergrund zur "Win Stage": 
+
+![image6](https://github.com/userhg/Stundenblog/blob/master/images/Winstage.png)
 
 Drei Sekunden kann der Spieler sein Ergebnis betrachten, dann wechselt es wieder zur "Play Stage" und die Nachricht "NewBeginning" wird versendet. Diese empfängt der Sprite Fist P, erscheint und fordert den Spieler mit "Press the green flag!" dazu auf, das Spiel erneut zu starten. 
 
 Wenn jedoch der Fall  *fistchoice* = *userchoice* (Computer und Spieler haben beide entweder Stein, Schere oder Papier gewählt) eintritt, wird die Nachricht "TryAgain" versendet. Daraufhin verändert sich der Hintergrund zur "Try again stage". Der Rest vom Ende des Spiels verläuft von dort genau so wie im Fall "Win". 
+
+![image7](https://github.com/userhg/Stundenblog/blob/master/images/Tryagainstage.png)
 
 Wenn die Variabeln 
 
@@ -108,9 +117,12 @@ Wenn die Variabeln
 
 lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen,verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
 
+![image8](https://github.com/userhg/Stundenblog/blob/master/images/Losestage.png)
+
 
 ### Spielreflexion<a name="8"></a>
 
 Nach zweieinhalb Monaten, in denen wir sowohl Erfolgserlebnisse, als auch so manchen Tiefpunkt erlitten haben, sind wir mit dem Ergebnis unseres ersten Projekts zufrieden.
 Unser Spiel wäre alledings auch noch ausbaufähig gewesen. Man hättte das Ganze auf mehrere Runden erweitern können, bis der Spieler oder der Computer beispielsweise mit drei Punkten gewinnt. Jedoch fehlte uns dazu die Zeit, da wir viel Zeit benötigten, unere eigenen Ideen und Ansaätze erfolgreich umzusetzen. Daher haben wir entschieden, dass das Spiel nach einer Runde zu Ende ist. So konnten wir uns auf die wesentlichen Vorgänge des Spiels besser konzentrieren.
 Wir sind sehr stolz darauf "Rock, Paper Scissors" ohne jegliche Hilfsmittel aus dem Internet oder Vorwissen programmiert zu haben. Uns gefällt auch d
+Allerdings müssen wir auch anmerken, dass wir die Plattform Snap! im nachhinein nicht wieder wählen würden und auch nicht empfehlen können. Die Plattform hat immer wieder sehr langsam reagiert und einzelne Befehle, trotz ihrer Richtigkeit erst nach einigen Versuchen angenommen und umgesetzt. Dies hat uns viel Zeit und Nerven gekostet.
