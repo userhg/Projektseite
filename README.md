@@ -31,7 +31,7 @@ Schuljahr 2019/2020
 Vor unserer ersten Informatikstunde hatten wir beide keinerlei Vorstellungen oder Vorkenntnisse von Informatik. Aufwendige Kurse im Internet konnten wir aus zeitlichen Gründen leider nicht durchführen und wagten so den Sprung ins kalte Wasser. Was ohne jegliche Vorkenntnisse oder Hilfsmittel aus dem Internet, sondern nur durch eigenes logisches Denken und vielen Anlaufversuchen entstanden ist, wird im Folgenden präsentiert.
 
 ### Das Programm<a name="2"></a>
-Das Programm, welches wir für das Erstellen unseres Projekts verwendet haben, ist die Plattform Snap! (https://snap.berkeley.edu/)
+Das Programm, welches wir für das Erstellen unseres Projekts verwendet haben, ist die Plattform Snap! (https://snap.berkeley.edu/).
 Diese wirbt mit anfängerfreundlichen Designs und hilfreichen Tipps, die uns jedoch nicht viel geholfen haben. Das Konzept von Snap! basiert auf einer visuellen Programmiersprache, sodass Scipts durch vorgefertigte Blocks nachvollziehbar sind. 
 
 ### Die Spielidee<a name="3"></a>
@@ -53,7 +53,7 @@ Im Hintergrund ist die "Play Stage" angezeigt.
 ![image1](https://github.com/userhg/Stundenblog/blob/master/images/Play%20stage.png)
 
 Zu Anfang wird der Spieler durch Anweisungen in Sprechblase dazu aufgefordert sein Wahl des Werkzeuges zu betätigen.
-Dazu haben wir zwei Variablen eingeführt: *userchoice* und *Spacekeypressed*
+Dazu haben wir zwei Variablen eingeführt: *userchoice* und *Spacekeypressed*.
 Beide Variablen werden zu Anfang auf 0 gesetzt.
 In der ersten Sprechblase wird dazu aufgefordert zuerst die Leertaste zu drücken, um das Spiel zu starten.
 Sobald dies erfolgt, wird die Variable *Spacekeypressed* auf 1 gesetzt und die Sprechblase verschwindet.
@@ -115,7 +115,7 @@ Wenn die Variabeln
 
 *fistchoice* = 3 und *userchoice* = 1 (Spieler veliert mit Stein gegen Computer mit Papier)
 
-lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen,verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
+lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich zur "Lose stage" und wie bei den anderen Spielausgängen, verschwinden alle Sprites und es erscheint nach drei Sekunden Fist P im "Play Stage" Hintergund und fordert den Spieler zum Neustart auf und das Spiel beginnt wieder von vorne. 
 
 ![image8](https://github.com/userhg/Stundenblog/blob/master/images/Losestage.png)
 
@@ -123,6 +123,6 @@ lauten,  wird die Nachricht "Lose" verschickt, der Hintergrund verändert sich z
 ### Spielreflexion<a name="8"></a>
 
 Nach zweieinhalb Monaten, in denen wir sowohl Erfolgserlebnisse, als auch so manchen Tiefpunkt erlitten haben, sind wir mit dem Ergebnis unseres ersten Projekts zufrieden.
-Unser Spiel wäre alledings auch noch ausbaufähig gewesen. Man hätte das Ganze auf mehrere Runden erweitern können, bis der Spieler oder der Computer beispielsweise mit drei Punkten gewinnt. Jedoch fehlte uns dazu die Zeit, da wir viel Zeit benötigten, unere eigenen Ideen und Ansaätze erfolgreich umzusetzen. Daher haben wir entschieden, dass das Spiel nach einer Runde zu Ende ist. So konnten wir uns auf die wesentlichen Vorgänge des Spiels besser konzentrieren.
+Unser Spiel wäre allerdings auch noch ausbaufähig gewesen. Man hätte das Ganze auf mehrere Runden erweitern können, bis der Spieler oder der Computer beispielsweise mit drei Punkten gewinnt. Jedoch fehlte uns dazu die Zeit, da wir viel Zeit benötigten, unsere eigenen Ideen und Ansätze erfolgreich umzusetzen. Daher haben wir entschieden, dass das Spiel nach einer Runde zu Ende ist. So konnten wir uns auf die wesentlichen Vorgänge des Spiels besser konzentrieren.
 Wir sind sehr stolz darauf "Rock, Paper Scissors" ohne jegliche Hilfsmittel aus dem Internet oder Vorwissen programmiert zu haben. Uns gefällt auch die Spielidee und unsere Umsetzung.
-Allerdings müssen wir auch anmerken, dass wir die Plattform Snap! im nachhinein nicht wieder wählen würden und auch nicht empfehlen können. Die Plattform hat immer wieder sehr langsam reagiert und einzelne Befehle, trotz ihrer Richtigkeit erst nach einigen Versuchen angenommen und umgesetzt. Dies hat uns viel Zeit und Nerven gekostet.
+Außerdem müssen wir auch anmerken, dass wir die Plattform Snap! im nachhinein nicht wieder wählen würden und auch nicht empfehlen können. Die Plattform hat immer wieder sehr langsam reagiert und einzelne Befehle, trotz ihrer Richtigkeit erst nach einigen Versuchen angenommen und umgesetzt. Dies hat uns viel Zeit und Nerven gekostet.
